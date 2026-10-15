@@ -488,3 +488,32 @@ body{background:#f4f7fd}
 .slide-inner{position:relative;z-index:1}
 .slide-inner h2{font-size:32px;text-shadow:0 3px 14px rgba(0,0,0,.35);letter-spacing:.5px}
 .slide-inner .btn-primary{box-shadow:0 6px 20px rgba(0,0,0,.35);font-size:16px;padding:13px 32px}
+
+/* ---- Hero with photo backgrounds ---- */
+.slide{background-size:cover;background-position:center}
+.slide::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,8,20,.25),rgba(5,8,20,.72));border-radius:0}
+.slide-inner{text-shadow:0 2px 12px rgba(0,0,0,.6)}
+
+/* ---- Mobile polish ---- */
+@media(max-width:640px){
+  .site-header .nav{padding:8px 10px;gap:8px}
+  .brand{font-size:17px}
+  .site-header .btn-primary.small{padding:7px 12px;font-size:13px}
+  .site-header .outline-btn{padding:7px 10px;font-size:13px}
+  .balance-chip{font-size:12px;padding:6px 10px}
+  .user-chip{font-size:12px;max-width:90px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .slides{height:230px}
+  .slide-inner h2{font-size:20px}
+  .slide-inner p{font-size:13px;margin-bottom:12px}
+  .slide-inner .btn-primary{font-size:14px;padding:11px 24px}
+  .notice-bar{font-size:12px}
+  .cat-title{font-size:19px}
+  .pgrid{grid-template-columns:repeat(3,1fr);gap:10px;padding:0 10px}
+  .pcard-name{font-size:12px}
+  .pcard-price{font-size:14px}
+  .cta-banner{padding:18px}
+  .cta-banner h2{font-size:17px}
+  .cta-banner .btn-primary{width:100%;text-align:center}
+  .feed-row{font-size:13px;padding:10px 12px}
+  .help-pill{display:none}
+}
