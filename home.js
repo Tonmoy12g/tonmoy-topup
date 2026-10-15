@@ -88,4 +88,14 @@ document.addEventListener("DOMContentLoaded", async () => {
   const fr = $("feed-refresh");
   if (fr) fr.onclick = loadFeed;
   setInterval(loadFeed, 60000); // refresh feed every minute
+  // category chips
+  document.querySelectorAll("#category-chips .chip").forEach((c) => {
+    c.onclick = () => {
+      document.querySelectorAll("#category-chips .chip").forEach((x) => x.classList.remove("active"));
+      c.classList.add("active");
+      const cat = c.dataset.cat;
+      $("sec-diamond").style.display = (cat === "all" || cat === "diamond") ? "" : "none";
+      $("sec-member").style.display = (cat === "all" || cat === "member") ? "" : "none";
+    };
+  });
 });

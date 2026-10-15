@@ -455,3 +455,36 @@ body{background:#f4f7fd}
   .slides{height:240px}
   .slide-inner h2{font-size:22px}
 }
+
+/* ---- Prominent Add Money + chips + CTA ---- */
+.addmoney-btn{background:linear-gradient(135deg,#ff9f1a,#ff6b1a);color:#1a1206;font-weight:800;padding:8px 16px;border-radius:20px;font-size:14px;text-decoration:none;white-space:nowrap;box-shadow:0 2px 8px rgba(255,159,26,.4)}
+.addmoney-btn:hover{transform:translateY(-1px)}
+.cta-banner{max-width:1100px;margin:22px auto 0;padding:0 16px;display:flex;align-items:center;justify-content:space-between;gap:16px;background:linear-gradient(135deg,#1a2a6c,#2b6cb0);border-radius:16px;padding:22px;color:#fff;flex-wrap:wrap}
+.cta-banner h2{margin-bottom:6px;font-size:20px}
+.cta-banner p{opacity:.9;font-size:14px;margin:0}
+.chips{display:flex;gap:10px;justify-content:center;margin:22px 0 6px;flex-wrap:wrap}
+.chip{border:2px solid #dfe5f2;background:#fff;border-radius:20px;padding:8px 20px;font-size:14px;font-weight:600;cursor:pointer;color:#1a2a6c}
+.chip.active{background:#1a2a6c;border-color:#1a2a6c;color:#fff}
+
+/* ---- Light-surface readability fixes ---- */
+.account-main, .wizard-step, .info-card, .order-card, .contact-card,
+.product-banner, .pay-option, .need-line { color: #1f2937; }
+.account-main .muted, .wizard-step .muted, .product-page .muted,
+.legal-page .muted, .account-wrap .muted { color: #5b6b8c; }
+.site-header .outline-btn { color: #1a2a6c; border-color: #b9c6e2; background: #fff; font-weight: 600; }
+.site-header .outline-btn:hover { border-color: #1a2a6c; }
+.info-card b, .order-card b { color: #111; }
+
+/* ---- Beautiful CTA banner ---- */
+.cta-banner{position:relative;overflow:hidden;background:linear-gradient(120deg,#141b4d 0%,#1a2a6c 45%,#2b6cb0 100%);border:1px solid rgba(255,255,255,.12);box-shadow:0 10px 30px rgba(26,42,108,.35)}
+.cta-banner::before{content:"";position:absolute;width:340px;height:340px;border-radius:50%;background:radial-gradient(circle,rgba(255,159,26,.35),transparent 70%);top:-140px;right:-80px}
+.cta-banner::after{content:"💰";position:absolute;font-size:110px;opacity:.12;right:24px;top:50%;transform:translateY(-50%) rotate(-12deg)}
+.cta-banner > div, .cta-banner > a{position:relative;z-index:1}
+.cta-banner .btn-primary{box-shadow:0 6px 18px rgba(255,159,26,.5);font-size:17px;padding:14px 34px}
+
+/* ---- Richer hero ---- */
+.slide::before{content:"";position:absolute;width:480px;height:480px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.16),transparent 70%);top:-160px;left:-120px}
+.slide::after{content:"";position:absolute;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(0,0,0,.18),transparent 70%);bottom:-120px;right:-60px}
+.slide-inner{position:relative;z-index:1}
+.slide-inner h2{font-size:32px;text-shadow:0 3px 14px rgba(0,0,0,.35);letter-spacing:.5px}
+.slide-inner .btn-primary{box-shadow:0 6px 20px rgba(0,0,0,.35);font-size:16px;padding:13px 32px}

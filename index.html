@@ -18,6 +18,7 @@
       <a href="contact.html">যোগাযোগ</a>
     </nav>
     <div class="nav-actions">
+      <a href="account.html#addmoney" class="addmoney-btn">💰 Add Money</a>
       <span id="user-chip" class="user-chip hidden"></span>
       <a id="balance-chip" href="account.html#addmoney" class="balance-chip hidden">💰 ৳০</a>
       <a id="account-link" href="account.html" class="outline-btn hidden">👤 অ্যাকাউন্ট</a>
@@ -68,13 +69,30 @@
   <a class="support-btn mail" href="mailto:mdtonmoyhossen327@gmail.com">✉️ ইমেইল করুন</a>
 </section>
 
+<!-- ============ ADD MONEY CTA ============ -->
+<section class="cta-banner">
+  <div>
+    <h2>💰 ওয়ালেটে টাকা যোগ করুন</h2>
+    <p>বিকাশ / নগদ / বাংলা QR দিয়ে ব্যালেন্স যোগ করে শুধু UID দিয়ে টপআপ করুন</p>
+  </div>
+  <a href="account.html#addmoney" class="btn-primary big">💰 Add Money</a>
+</section>
+
 <!-- ============ PRODUCTS ============ -->
 <main id="products">
-  <h1 class="cat-title">💎 ডায়মন্ড টপআপ</h1>
-  <div id="diamond-grid" class="pgrid"></div>
-
-  <h1 class="cat-title">🎫 মেম্বারশিপ</h1>
-  <div id="member-grid" class="pgrid"></div>
+  <div class="chips" id="category-chips">
+    <button class="chip active" data-cat="all">সব</button>
+    <button class="chip" data-cat="diamond">💎 ডায়মন্ড</button>
+    <button class="chip" data-cat="member">🎫 মেম্বারশিপ</button>
+  </div>
+  <div id="sec-diamond">
+    <h1 class="cat-title">💎 ডায়মন্ড টপআপ</h1>
+    <div id="diamond-grid" class="pgrid"></div>
+  </div>
+  <div id="sec-member">
+    <h1 class="cat-title">🎫 মেম্বারশিপ</h1>
+    <div id="member-grid" class="pgrid"></div>
+  </div>
 </main>
 
 <!-- ============ HOW IT WORKS ============ -->
