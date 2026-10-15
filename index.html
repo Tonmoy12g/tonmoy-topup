@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TONMOY Topup — Free Fire Diamond Topup Bangladesh</title>
+<meta name="description" content="TONMOY Topup — বাংলাদেশের বিশ্বস্ত Free Fire ডায়মন্ড টপআপ সাইট। বিকাশ/নগদ/বাংলা QR দিয়ে ব্যালেন্স যোগ করে শুধু UID দিয়ে টপআপ করুন।">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="nav">
+    <a class="brand" href="index.html">🎮 TONMOY Topup</a>
+    <nav class="nav-links">
+      <a href="index.html#products">টপআপ</a>
+      <a href="contact.html">যোগাযোগ</a>
+    </nav>
+    <div class="nav-actions">
+      <span id="user-chip" class="user-chip hidden"></span>
+      <a id="balance-chip" href="account.html#addmoney" class="balance-chip hidden">💰 ৳০</a>
+      <a id="account-link" href="account.html" class="outline-btn hidden">👤 অ্যাকাউন্ট</a>
+      <button id="login-btn" class="btn-primary small">লগইন</button>
+      <button id="logout-btn" class="outline-btn hidden">লগআউট</button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ NOTICE BAR ============ -->
+<div id="notice-bar" class="notice-bar">
+  <span class="notice-pill">NOTICE</span>
+  <span class="notice-text">⚠️ সঠিক Player ID (UID) দিয়ে অর্ডার করুন। ভুল UID-এ ডায়মন্ড গেলে কর্তৃপক্ষ দায়ী থাকবে না।</span>
+  <button class="notice-x" onclick="dismissNotice()">✕</button>
+</div>
+
+<!-- ============ HERO CAROUSEL ============ -->
+<section class="hero">
+  <div class="slides" id="hero-slides">
+    <div class="slide active" style="--g1:#e2136e;--g2:#7b0f3f">
+      <div class="slide-inner">
+        <h2>💎 সবচেয়ে কম দামে ডায়মন্ড!</h2>
+        <p>বিকাশ / নগদ / বাংলা QR দিয়ে ব্যালেন্স যোগ করুন — শুধু UID দিয়েই টপআপ</p>
+        <a href="#products" class="btn-primary">এখনই কিনুন</a>
+      </div>
+    </div>
+    <div class="slide" style="--g1:#f6921e;--g2:#8a4a00">
+      <div class="slide-inner">
+        <h2>⚡ দ্রুত ডেলিভারি</h2>
+        <p>অর্ডারের ৫-৩০ মিনিটের মধ্যে আপনার অ্যাকাউন্টে ডায়মন্ড</p>
+        <a href="#how" class="btn-primary">কীভাবে কিনবেন</a>
+      </div>
+    </div>
+    <div class="slide" style="--g1:#2b6cb0;--g2:#102a43">
+      <div class="slide-inner">
+        <h2>💰 ওয়ালেট ব্যালেন্স</h2>
+        <p>একবার টাকা যোগ করুন, বারবার UID দিয়ে টপআপ করুন — কোনো ঝামেলা নেই</p>
+        <a href="account.html#addmoney" class="btn-primary">Add Money</a>
+      </div>
+    </div>
+  </div>
+  <div class="dots" id="hero-dots"></div>
+</section>
+
+<!-- ============ SUPPORT BUTTONS ============ -->
+<section class="support-row">
+  <a class="support-btn wa" id="support-wa" href="#" target="_blank" rel="noopener">💬 WhatsApp সাপোর্ট</a>
+  <a class="support-btn mail" href="mailto:mdtonmoyhossen327@gmail.com">✉️ ইমেইল করুন</a>
+</section>
+
+<!-- ============ PRODUCTS ============ -->
+<main id="products">
+  <h1 class="cat-title">💎 ডায়মন্ড টপআপ</h1>
+  <div id="diamond-grid" class="pgrid"></div>
+
+  <h1 class="cat-title">🎫 মেম্বারশিপ</h1>
+  <div id="member-grid" class="pgrid"></div>
+</main>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section class="steps" id="how">
+  <h2>কীভাবে কিনবেন</h2>
+  <div class="steps-grid">
+    <div class="step"><div class="step-num">১</div><h3>Add Money করুন</h3><p>অ্যাকাউন্টে গিয়ে বিকাশ/নগদ/বাংলা QR-এ টাকা পাঠিয়ে ব্যালেন্স যোগ করুন</p></div>
+    <div class="step"><div class="step-num">২</div><h3>প্যাকেজ বাছুন</h3><p>পছন্দের ডায়মন্ড প্যাকেজ বা মেম্বারশিপ সিলেক্ট করুন</p></div>
+    <div class="step"><div class="step-num">৩</div><h3>শুধু Player ID দিন</h3><p>আপনার Free Fire Player ID (UID) লিখুন — ব্যালেন্স থেকে টাকা কাটবে</p></div>
+    <div class="step"><div class="step-num">৪</div><h3>৫-৩০ মিনিটে ডেলিভারি</h3><p>অর্ডার কনফার্ম হলেই আপনার অ্যাকাউন্টে ডায়মন্ড পৌঁছে যাবে</p></div>
+  </div>
+</section>
+
+<!-- ============ RECENT ORDERS LIVE ============ -->
+<section class="recent">
+  <h2>🧾 সাম্প্রতিক অর্ডার <span class="live-pill">● Live</span>
+    <button id="feed-refresh" class="outline-btn small">🔄</button>
+  </h2>
+  <div id="feed" class="feed"><p class="muted center">লোড হচ্ছে…</p></div>
+</section>
+
+<!-- ============ SUPPORT BANNER ============ -->
+<section class="support-banner">
+  <h2>💬 কোনো সমস্যা?</h2>
+  <p>WhatsApp-এ মেসেজ করুন — দ্রুত সমাধান পাবেন</p>
+  <a id="support-banner-wa" class="btn-primary" href="#" target="_blank" rel="noopener">WhatsApp করুন</a>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-col">
+      <h3>STAY CONNECTED</h3>
+      <p class="muted">যেকোনো সমস্যায় WhatsApp-এ যোগাযোগ করুন।</p>
+      <div class="social-row">
+        <a id="foot-wa" href="#" target="_blank" rel="noopener" title="WhatsApp">💬</a>
+        <a href="mailto:mdtonmoyhossen327@gmail.com" title="Email">✉️</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h3>SUPPORT CENTER</h3>
+      <p>📞 হেল্প লাইন: <strong>সকাল ৯টা – রাত ১২টা</strong></p>
+      <p>💬 WhatsApp: <strong>01401328940</strong></p>
+    </div>
+    <div class="footer-col">
+      <h3>গুরুত্বপূর্ণ লিংক</h3>
+      <p><a href="about.html">আমাদের সম্পর্কে</a></p>
+      <p><a href="terms.html">শর্তাবলী</a></p>
+      <p><a href="refund.html">রিফান্ড নীতি</a></p>
+      <p><a href="privacy.html">প্রাইভেসি পলিসি</a></p>
+    </div>
+  </div>
+  <div class="footer-bottom">© TONMOY Topup 2026 | সর্বস্বত্ব সংরক্ষিত</div>
+</footer>
+
+<!-- ============ FLOATING HELP ============ -->
+<a id="help-bubble" class="help-bubble" href="#" target="_blank" rel="noopener">
+  <span class="help-pill">সাহায্য লাগবে?</span><span class="help-icon">🎧</span>
+</a>
+
+<!-- ============ AUTH MODAL ============ -->
+<div id="auth-modal" class="modal hidden">
+  <div class="modal-box">
+    <button class="modal-close">✕</button>
+    <div class="auth-tabs">
+      <button id="show-login" class="active">লগইন</button>
+      <button id="show-signup">সাইন আপ</button>
+    </div>
+    <p id="auth-note" class="muted"></p>
+    <form id="login-form">
+      <label>মোবাইল নম্বর<input id="login-phone" type="tel" placeholder="01XXXXXXXXX" required></label>
+      <label>পাসওয়ার্ড<input id="login-password" type="password" required></label>
+      <p id="auth-error" class="error"></p>
+      <button type="submit" class="btn-primary">লগইন</button>
+    </form>
+    <form id="signup-form" class="hidden">
+      <label>আপনার নাম<input id="signup-name" type="text" placeholder="নাম" required></label>
+      <label>মোবাইল নম্বর<input id="signup-phone" type="tel" placeholder="01XXXXXXXXX" required></label>
+      <label>পাসওয়ার্ড<input id="signup-password" type="password" placeholder="কমপক্ষে ৬ অক্ষর" required></label>
+      <button type="submit" class="btn-primary">অ্যাকাউন্ট খুলুন</button>
+    </form>
+  </div>
+</div>
+
+<script src="common.js"></script>
+<script src="home.js"></script>
+</body>
+</html>
