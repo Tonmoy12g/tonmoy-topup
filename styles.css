@@ -517,3 +517,34 @@ body{background:#f4f7fd}
   .feed-row{font-size:13px;padding:10px 12px}
   .help-pill{display:none}
 }
+
+/* ---- Hero as contained 16:9 card (no cropping) ---- */
+.hero{max-width:1000px;margin:14px auto;padding:0 14px;background:none;max-height:none}
+.slides{position:relative;aspect-ratio:16/9;height:auto;border-radius:18px;overflow:hidden;box-shadow:0 12px 32px rgba(0,0,0,.28)}
+.slide{border-radius:18px}
+.dots{bottom:10px}
+@media(max-width:640px){
+  .hero{padding:0 10px;margin:10px auto}
+  .slides{border-radius:14px;height:auto}
+  .slide-inner h2{font-size:19px}
+  .slide-inner p{font-size:12.5px}
+}
+
+/* ---- Stop horizontal wobble: page stays fixed ---- */
+html, body { overflow-x: clip; }
+@supports not (overflow: clip) { html, body { overflow-x: hidden; } }
+
+/* ---- Header: never overflow on mobile ---- */
+@media(max-width:640px){
+  .site-header .nav{flex-wrap:nowrap}
+  .site-header .nav-actions{flex-wrap:nowrap;min-width:0}
+  #user-chip{display:none} /* name visible on account page; saves header space */
+  #account-link{padding:7px 10px;font-size:13px}
+  .balance-chip{flex-shrink:0}
+}
+/* ---- Other flex rows: allow wrap / shrink ---- */
+.product-banner > div{min-width:0}
+.product-banner{flex-wrap:wrap}
+.order-card{flex-wrap:wrap}
+.order-card > div{min-width:0}
+.notice-text{min-width:0}
