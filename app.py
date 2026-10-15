@@ -27,7 +27,7 @@ import urllib.request
 import uuid
 from datetime import datetime, timezone
 
-from flask import Flask, abort, g, jsonify, request, send_from_directory
+from flask import Flask, abort, g, jsonify, request, send_file, send_from_directory
 from werkzeug.security import check_password_hash, generate_password_hash
 from werkzeug.utils import secure_filename
 
@@ -360,6 +360,20 @@ def mask_name(name):
     if not name:
         return "***"
     return name[:3] + "***"
+
+
+@app.get("/download")
+def download_apk():
+    """Serve the Android APK from the site's own domain."""
+    apk_path = os.path.join(FRONTEND_DIR, "TONMOY-Topup.apk")
+    if not os.path.exists(apk_path):
+        abort(404)
+    return send_file(
+        apk_path,
+        mimetype="application/vnd.android.package-archive",
+        as_attachment=True,
+        download_name="TONMOY-Topup.apk",
+    )
 
 
 @app.get("/api/recent-orders")
